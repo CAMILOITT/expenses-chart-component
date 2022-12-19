@@ -1,0 +1,36 @@
+:root {
+  /* ## Colors */
+  --DarkBrown: hsl(25, 47%, 15%);
+  --Cream: hsl(27, 66%, 92%);
+  --VeryPaleOrange: hsl(33, 100%, 98%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main {
+  padding: 20px;
+  background: var(--VeryPaleOrange);
+  max-width: 435px;
+  border-radius: 14px;
+}
+.title {
+  font-size: 1.5em;
+  color: var(--DarkBrown);
+  margin-block-end: 35px;
+}
+.containerDayWeek {
+  display: flex;
+  border-bottom: 3px solid var(--Cream);
+  padding-block: 5px;
+  align-items: flex-end;
+}
+@media screen and (max-width: 390px) {
+  .title {
+    font-size: 1.2em;
+  }
+  .main {
+    width: 100%;
+  }
+}

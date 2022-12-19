@@ -1,0 +1,70 @@
+:root {
+  /* ## Colors */
+  --SoftRed: hsl(10, 79%, 65%);
+  --Cyan: hsl(186, 34%, 60%);
+  --MediumBrown: hsl(28, 10%, 53%);
+  --DarkBrown: hsl(25, 47%, 15%);
+  --VeryPaleOrange: hsl(33, 100%, 98%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  margin: 5px;
+}
+.barAnalysis {
+  width: 35px;
+  min-width: 20px;
+  height: 150px;
+  background: var(--SoftRed);
+  border-radius: 5px;
+  margin-block-end: 10px;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+  position: relative;
+  margin: auto;
+}
+.dayWeek {
+  font-size: 0.8em;
+  font-weight: bold;
+  text-align: center;
+  color: var(--MediumBrown);
+  text-align: center;
+}
+.barAnalysis:hover .valueAmount {
+  top: -30px;
+  opacity: 1;
+}
+.valueAmount {
+  display: block;
+  position: absolute;
+  top: 0px;
+  background: var(--DarkBrown);
+  color: var(--VeryPaleOrange);
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 0.7em;
+  margin: auto;
+  left: -9px;
+  z-index: 1;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  opacity: 0;
+  font-weight: bold;
+}
+@media screen and (max-width: 390px) {
+  .barAnalysis {
+    width: 25px;
+  }
+  .container {
+    margin: 3px;
+  }
+}

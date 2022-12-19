@@ -1,0 +1,47 @@
+ :root {
+        /* ## Colors */
+        --DarkBrown: hsl(25, 47%, 15%);
+        --MediumBrown: hsl(28, 10%, 53%);
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .containerMonth {
+        display: grid;
+        grid-template-areas: 'title title' 'value percentage' 'value subtitle' ;
+        justify-content: space-between;
+        margin-block-start: 20px;
+        align-items: center;
+      }
+      .title {
+        grid-area: title;
+        font-size: .8em;
+        color: var(--MediumBrown);
+      }
+      .totalMonth {
+        display: block;
+        grid-area: value;
+        font-weight: bold;
+        font-size: 2em;
+        color: var(--DarkBrown);
+      }
+      .percentage {
+        display: block;
+        grid-area: percentage;
+        font-weight: bold;
+        text-align: right;
+        color: var(--DarkBrown);
+        font-size: .9em;
+      }
+      .subtitle {
+        grid-area: subtitle;
+        font-size: .8em;
+        color: var(--MediumBrown);
+      }
+      @media screen and (max-width: 390px) {
+        .totalMonth{
+          font-size: 1.5em;
+        }
+      }

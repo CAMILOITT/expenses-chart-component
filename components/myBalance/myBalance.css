@@ -1,0 +1,41 @@
+:root {
+  /* ## Colors */
+  --VeryPaleOrange: hsl(33, 100%, 98%);
+  --SoftRed: hsl(10, 79%, 65%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.header {
+  width: 355px;
+  background: var(--SoftRed);
+  display: grid;
+  grid-template-areas: 'title logo' 'value logo';
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  border-radius: 10px;
+  margin-block-end: 15px;
+  color: var(--VeryPaleOrange);
+}
+.title {
+  grid-area: title;
+  font-size: 0.9em;
+  font-weight: 400;
+  margin-block-end: 10px;
+}
+.money {
+  grid-area: value;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+.logo {
+  grid-area: logo;
+}
+@media screen and (max-width: 390px) {
+  .header {
+    width: 94vw;
+  }
+}
