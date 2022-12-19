@@ -33,6 +33,6 @@ class totalMonth extends HTMLElement {
   }
 }
 
-customElements.define('total-month', totalMonth);
+window.customElements.define('total-month', totalMonth);
 
 

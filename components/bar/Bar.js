@@ -69,7 +69,7 @@ class barAnalysis extends HTMLElement {
   }
 }
 
-customElements.define('bar-analysis', barAnalysis);
+window.customElements.define('bar-analysis', barAnalysis);
 
 let valueAmount = [];
 dataMoney.forEach((data) => valueAmount.push(data.amount));

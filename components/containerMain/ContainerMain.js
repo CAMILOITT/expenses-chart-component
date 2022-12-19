@@ -33,4 +33,4 @@ class containerMain extends HTMLElement {
     `;
   }
 }
-customElements.define('container-main', containerMain);
+window.customElements.define('container-main', containerMain);
