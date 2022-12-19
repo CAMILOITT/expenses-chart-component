@@ -1,4 +1,4 @@
-import './myBalance/MyBalance';
-import './bar/Bar';
-import './totalMonth/TotalMonth';
-import './containerMain/ContainerMain';
+import './myBalance/MyBalance.js';
+import './bar/Bar.js';
+import './totalMonth/TotalMonth.js';
+import './containerMain/ContainerMain.js';
